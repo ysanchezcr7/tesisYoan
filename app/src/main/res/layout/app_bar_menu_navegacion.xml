@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/miAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            app:titleTextColor="@color/colorBlanco"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="@string/app_name"
+            android:minHeight="0dp"
+            app:layout_scrollFlags="scroll|enterAlways"
+            />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+        <include
+            android:layout_below="@+id/miAppBar"
+            layout="@layout/carruser_imagenes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+
+</RelativeLayout>

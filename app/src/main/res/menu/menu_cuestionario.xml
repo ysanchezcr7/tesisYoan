@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Navegacion">
+
+    <item
+        android:id="@+id/cuestionario"
+        android:icon="@drawable/ic_encuesta"
+        android:iconTint="@color/design_default_color_on_primary"
+        android:title="Encuesta"
+        app:showAsAction="collapseActionView|always"
+
+        />
+    <item
+        android:id="@+id/adelante"
+        android:icon="@drawable/ic_adelante"
+        android:iconTint="@color/design_default_color_on_primary"
+        android:title="Encuesta"
+        app:showAsAction="collapseActionView|always"
+
+        />
+
+
+</menu>

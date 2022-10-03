@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+
+
+    <item android:title="Aspectos Generales">
+
+      <menu>
+
+        <group android:checkableBehavior="single">
+
+          <item
+            android:id="@+id/general"
+            android:title="General"
+            android:icon="@drawable/ic_general"
+            app:showAsAction="always"
+       />
+
+
+        </group>
+      </menu>
+    </item>
+
+    <item android:title="Tema 1">
+        <menu>
+          <group android:checkableBehavior="single">
+              <item
+                  android:id="@+id/leccion1"
+                  android:title="Lección 1"
+                  android:icon="@drawable/ic_leccion1"
+                  app:showAsAction="always"/>
+              <item
+                  android:id="@+id/leccion2"
+                  android:title="Lección 2"
+                  android:icon="@drawable/ic_leccion2"
+                  app:showAsAction="always"/>
+
+          </group>>
+        </menu>
+    </item>
+    <item android:title="Tema 2">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/leccion3"
+                    android:title="Lección 3"
+                    android:icon="@drawable/ic_leccion3"
+                    app:showAsAction="always"/>
+                <item
+                    android:icon="@drawable/ic_leccion4"
+                    app:showAsAction="always"
+                    android:id="@+id/leccion4"
+                    android:title="Lección4" />
+
+            </group>>
+        </menu>
+    </item>
+    <item android:title="Tema 3" >
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/leccion5"
+                    android:title="Lección 5"
+                    android:icon="@drawable/ic_leccion5"
+                    app:showAsAction="always"/>
+                <item
+                    android:id="@+id/leccion6"
+                    android:title="Lección 6"
+                    android:icon="@drawable/ic_leccion6"
+                    app:showAsAction="always"/>
+            </group>>
+        </menu>
+    </item>
+    <item android:title="Otros">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/acercade"
+                    android:title="Acerca de"
+                    android:icon="@drawable/ic_acercade"
+                    app:showAsAction="always"/>
+            </group>>
+        </menu>
+    </item>
+
+
+
+</menu>

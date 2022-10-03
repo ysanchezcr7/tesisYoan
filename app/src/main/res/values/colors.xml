@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#00AFEE</color>
+    <color name="purple_700">#0D5570</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#000000</color>
+    <color name="relativDetalle">#FFFFFF</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#026BDA</color>
+    <color name="colorBlanco">#FFFFFF</color>
+    <color name="colorNegroCard">#121111</color>
+
+    <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">#fff</color>
+
+    <color name="colorPrimaryDark">#01579b</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="error">#f44336</color>
+    <color name="succes">#4caf50</color>
+    <color name="view">#13BCD9BE</color>
+    <color name="backgraudTolbar">#00FFFFFF</color>
+
+    <color name="cardDetalle">#D5111211</color>
+    <color name="cardImagIcon">#E80571E3</color>
+    <color name="colorDetalleContact">#026BDA</color>
+    <color name="color_ripler_end">#0288d1</color>
+    <color name="color_ripler_start">#01579b</color>
+    <color name="color_ripler_center">#0277bd</color>
+    <color name="driver">#48ABAEAC</color>
+    <color name="primaryVerde">#008577</color>
+
+</resources>

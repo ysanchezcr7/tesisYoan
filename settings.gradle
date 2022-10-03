@@ -1,0 +1,3 @@
+include ':app',':formularios', ':md-toast'
+
+rootProject.name = "App Yoan"

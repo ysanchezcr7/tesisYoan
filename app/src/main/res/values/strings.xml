@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ICI Learn</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="textgeneral">La asignatura Introducción a las Ciencias Informáticas, pertenece a la disciplina Práctica Profesional, de la carrera Ingeniería en Ciencias Informáticas. En esta asignatura los estudiantes se dotarán de herramientas que le permitirán enfrentarse durante la carrera a diferentes retos según su desempeño en la sociedad como profesional de las ciencias informáticas. A su vez adquirirán un grupo de habilidades y conocimientos relacionados con los componentes internos y externos de un ordenador, elaboración y diseño de aplicaciones web, la era digital y la gestión del conocimiento..
+</string>
+    <string name="evolutionintro">Entendemos el concepto de informática como la ciencia que se ocupa de estudiar los métodos técnicos y los procesos con el fin de almacenar, procesar y transmitir los datos digitalmente. Actualmente, en la informática se unen diversos elementos como es el software, el hardware, la electrónica, la computación y la programación. Hoy queremos hablarte de la evolución de la informática, de sus orígenes y del proceso de creación, usos, principales personalidades, y necesidades por el que ha ido pasando hasta llegar a lo que hoy conocemos.
+En 1936, Konrad Zuse, ingeniero alemán, diseño y fabricó la Z1, la que para muchos es la primera computadora programable de la historia.
+La Z1 era una calculadora mecánica binaria operada con electricidad y que ocupaba una mesa entera, bastante grande, por cierto.
+        Los datos los recibía de cintas perforadas, y aunque no permitía un lenguaje de programación tal y como lo entendemos hoy,
+        la Z1 fue la primera máquina programable de la historia.</string>
+
+    <string name="dominioInfromatica"></string>
+
+
+</resources>

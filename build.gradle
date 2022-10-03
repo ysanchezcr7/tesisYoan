@@ -1,0 +1,50 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+       // google()
+       // jcenter()
+
+
+      // maven { url 'http://dl.bintray.com/amulyakhare/maven' }
+
+
+
+        maven{ url "http://maven.prod.uci.cu/repository/maven.google.com/" }
+        maven{ url "http://maven.prod.uci.cu/repository/maven-central/" }
+        maven{ url "http://maven.prod.uci.cu/repository/maven-snapshots/"}
+
+      //  maven { url 'https://jitpck.io' }
+
+
+      /*maven{ url "http://maven.prod.uci.cu/service/rest/repository/browse/maven.google.com/" }
+       maven{ url "http://maven.prod.uci.cu/service/rest/repository/browse/maven-central/" }
+       maven{ url "http://maven.prod.uci.cu/service/rest/repository/browse/maven-snapshots/" }*/
+    }
+    dependencies {
+       // classpath 'com.android.tools.build:gradle:4.2.2'
+        classpath 'com.android.tools.build:gradle:4.1.0'
+
+
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+      //  google()
+     //   jcenter()
+
+
+       maven{ url "http://maven.prod.uci.cu/repository/maven.google.com/" }
+        maven{ url "http://maven.prod.uci.cu/repository/maven-central/" }
+       maven{ url "http://maven.prod.uci.cu/repository/maven-snapshots/" }
+        maven { url "https://jitpack.io" }
+       // maven { url 'https://jitpck.io' }
+
+
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

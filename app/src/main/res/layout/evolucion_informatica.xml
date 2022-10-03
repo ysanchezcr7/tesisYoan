@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/miAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+
+            android:id="@+id/collapsit"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@color/colorPrimary"
+            android:tooltipText="Title"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|enterAlways" >
+
+            <ImageView
+                android:id="@+id/imgEvol"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/informatica_historia"
+                android:scaleType="centerCrop"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="0.7">
+
+            </ImageView>
+
+            <androidx.appcompat.widget.Toolbar
+
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:minHeight="0dp"
+                app:title="Evolución de la Informática"
+                app:titleTextColor="@color/white"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/Widget.AppCompat.Light.PopupMenu.Overflow"
+                />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+
+        app:tint="@android:color/white"
+        app:backgroundTint="@color/colorPrimaryDark"
+        app:layout_anchor="@id/miAppBar"
+        app:layout_anchorGravity="bottom|end"
+        app:rippleColor="#2196F3"
+        app:srcCompat="@drawable/ic_encuesta" />
+
+    <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgEvol"
+                        android:padding="5dp"
+                        android:text="@string/evolutionintro"
+                        android:textSize="16sp"
+                        android:textStyle="normal|bold" />
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/tvE1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/style_butoon"
+                        android:drawableLeft="@drawable/ic_one"
+                        android:drawableTint="@color/colorPrimary"
+                        android:padding="5dp"
+                        android:text="Primera Generación (1946-1958)"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/tvE2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/style_butoon"
+                        android:padding="5dp"
+                        android:drawableLeft="@drawable/ic_two"
+                        android:drawableTint="@color/colorPrimary"
+                        android:text="Segunda Generación (1959-1963)"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                    <com.google.android.material.button.MaterialButton
+
+                        android:id="@+id/tvE3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/style_butoon"
+                        android:padding="5dp"
+                        android:text="Tercera Generación (1964-1971)"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp"
+                        android:drawableTint="@color/colorPrimary"
+                        android:drawableLeft="@drawable/ic_three"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/tvE4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/style_butoon"
+                        android:padding="5dp"
+                        android:text="Cuarta Generación (1971-1983)"
+                        android:textAllCaps="false"
+                        android:drawableLeft="@drawable/ic_cuatro"
+                        android:drawableTint="@color/colorPrimary"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/tvE5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/style_butoon"
+                        android:padding="5dp"
+                        android:text="Quinta Generación (1984-...)"
+                        android:textAllCaps="false"
+                        android:drawableTint="@color/colorPrimary"
+                        android:drawableLeft="@drawable/ic_cinco"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp"
+
+                        />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/tvEvolucionCuba"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/style_butoon"
+                        android:padding="5dp"
+                        android:text="Evolucion informática en Cuba"
+                        android:textAllCaps="false"
+                        android:drawableTint="@color/colorPrimary"
+                        android:drawableLeft="@drawable/ic_evolucion_cuba"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp"
+
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
