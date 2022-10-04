@@ -19,6 +19,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 
+import com.google.android.material.appbar.CollapsingToolbarLayout;
+
 public class DominiosInformatica extends AppCompatActivity {
 
 
@@ -41,7 +43,7 @@ public class DominiosInformatica extends AppCompatActivity {
             onStartCount = 2;
         }
 
-        toolbar = findViewById(R.id.toolbar);
+        toolbar = findViewById(R.id.toolbardominios);
         if (toolbar != null) {
             setSupportActionBar(toolbar);
             toolbar.setNavigationIcon(R.drawable.back);
@@ -54,7 +56,9 @@ public class DominiosInformatica extends AppCompatActivity {
                 }
             });
         }
-
+        CollapsingToolbarLayout ctl = findViewById(R.id.collapsitdominios);
+        ctl.setCollapsedTitleTextColor(getResources().getColor(R.color.colorBlanco));
+        ctl.setExpandedTitleColor(getResources().getColor(R.color.colorBlanco));
         dominio= findViewById(R.id.dominioinfo);
        String t= "<h1><span style='font-size:27px;line-height:150%;font-family:\"Arial\",\"sans-serif\";'><strong>Dominios de la inform&aacute;tica:</strong></span></h1>\n" +
                 "<p style='margin: 0in 0in 8pt; line-height: 150%; font-size: 15px; font-family: Calibri, \"sans-serif\"; text-align: left;'><span style='font-size:16px;line-height:150%;font-family:\"Arial\",\"sans-serif\";'>Los dominios de la inform&aacute;tica son aquellas &aacute;reas de la tecnolog&iacute;a y la sociedad donde se aplican los m&eacute;todos, t&eacute;cnicas y procedimientos de la inform&aacute;tica.</span></p>\n" +

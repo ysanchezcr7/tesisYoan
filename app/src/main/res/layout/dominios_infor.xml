@@ -1,44 +1,70 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<RelativeLayout
+<androidx.coordinatorlayout.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/fragmenleccion_1_seccion_2"
-   >
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/miAppBardominios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+
+            android:id="@+id/collapsitdominios"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:fitsSystemWindows="true"
+            android:tooltipText="Title"
+            app:contentScrim="@color/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|enterAlways">
+
+
+            <androidx.appcompat.widget.Toolbar
+
+                android:id="@+id/toolbardominios"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:minHeight="0dp"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/Widget.AppCompat.Light.PopupMenu.Overflow"
+                app:title="Evolución de la Informática"
+                app:titleTextColor="@color/white" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <LinearLayout
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.cardview.widget.CardView
+            android:layout_margin="5dp"
+            app:cardCornerRadius="5dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:padding="5dp"
-                android:text="Dominios de la informática"
-                android:textColor="@color/colorPrimary"
-                android:textSize="16sp"
-                android:textStyle="normal|bold">
-
-            </TextView>
 
             <TextView
+
                 android:id="@+id/dominioinfo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/imgEvol"
-                android:layout_margin="8dp"
-                android:padding="8dp"
-                android:text=""
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:text="sdasdasdasdas"
                 android:textSize="16sp" />
-        </LinearLayout>
+        </androidx.cardview.widget.CardView>
 
 
     </androidx.core.widget.NestedScrollView>
 
 
-</RelativeLayout >
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
 
