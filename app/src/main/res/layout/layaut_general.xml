@@ -3,54 +3,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/relativ1"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:rotation="1"
-    android:rotationY="-5">
+    android:layout_height="match_parent">
 
 
     <TextView
+
         android:id="@+id/tvNumero"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/imgEvol"
         android:layout_centerHorizontal="true"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="15dp"
-        android:padding="5dp"
-        android:rotationX="-7"
-        android:rotationY="10"
+        android:layout_margin="15dp"
+        android:background="@drawable/card_backgroud_ounline"
+        android:padding="8dp"
         android:text="Información General"
         android:textSize="20sp" />
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/card"
+    <ImageView
+
+        android:id="@+id/imgEvol"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/tvNumero"
-        android:layout_margin="0dp"
-        android:padding="15dp"
-        app:cardCornerRadius="25dp">
+        android:layout_height="280dp"
+        android:src="@drawable/imagen1">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+    </ImageView>
 
-            <ImageView
-                android:id="@+id/imgEvol"
-                android:layout_width="match_parent"
-                android:layout_height="280dp"
-                android:src="@drawable/inicio">
-
-            </ImageView>
-        </RelativeLayout>
-
-
-    </androidx.cardview.widget.CardView>
 
     <TextView
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/card"
+        android:layout_below="@+id/tvNumero"
         android:layout_marginLeft="5dp"
         android:layout_marginTop="5dp"
         android:padding="15dp"

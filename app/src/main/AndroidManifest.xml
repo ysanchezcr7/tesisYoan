@@ -30,12 +30,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".EvolucionInformatica"
+        <activity android:name=".Tema1.EvolucionInformatica"
             android:parentActivityName=".Navegacion"
             >
         </activity>
-        <activity android:name=".DominiosInformatica"
-            android:parentActivityName=".Navegacion"
+        <activity android:name=".Tema1.DominiosInformatica"
+            android:parentActivityName=".Tema1.EvolucionInformatica"
             >
         </activity>
         <activity android:name=".Software"
@@ -47,6 +47,10 @@
             >
         </activity>
         <activity android:name=".Tic"
+            android:parentActivityName=".Navegacion"
+            >
+        </activity>
+        <activity android:name=".Tema1.ParadigmasTecnoInfor"
             android:parentActivityName=".Navegacion"
             >
         </activity>

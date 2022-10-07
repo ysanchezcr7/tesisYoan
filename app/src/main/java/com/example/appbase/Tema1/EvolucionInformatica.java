@@ -1,4 +1,4 @@
-package com.example.appbase;
+package com.example.appbase.Tema1;
 
 
 import android.content.Context;
@@ -20,6 +20,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.appcompat.widget.Toolbar;
 
+import com.example.appbase.R;
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.google.android.material.button.MaterialButton;

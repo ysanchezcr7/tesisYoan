@@ -18,10 +18,10 @@
     <color name="colorAccent">#D81B60</color>
     <color name="error">#f44336</color>
     <color name="succes">#4caf50</color>
-    <color name="view">#13BCD9BE</color>
+    <color name="view">#0CC7DEC9</color>
     <color name="backgraudTolbar">#00FFFFFF</color>
 
-    <color name="cardDetalle">#D5111211</color>
+    <color name="cardDetalle">#F4222422</color>
     <color name="cardImagIcon">#E80571E3</color>
     <color name="colorDetalleContact">#026BDA</color>
     <color name="color_ripler_end">#0288d1</color>
